@@ -1,7 +1,7 @@
 {
   "name": "vue-3-socket.io",
   "author": "David Gurshumov <gurshumov.david@gmail.com>",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "socket.io implementation for Vue.js and Vuex",
   "main": "dist/vue-socketio.js",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/Pazza/Vue-3-Socket.io",
   "dependencies": {
-     "socket.io-client": "^4.8.1"
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.28.4",
