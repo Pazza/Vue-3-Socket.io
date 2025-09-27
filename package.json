@@ -5,7 +5,7 @@
   "description": "socket.io implementation for Vue.js and Vuex",
   "main": "dist/vue-socketio.js",
   "scripts": {
-    "build": "webpack --mode=production --progress --hide-modules"
+    "build": "webpack --mode=production --progress --stats=minimal"
   },
   "repository": {
     "type": "git",
