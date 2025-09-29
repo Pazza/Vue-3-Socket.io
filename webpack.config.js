@@ -1,5 +1,5 @@
 module.exports = {
-    mode: process.env.NODE_ENV,
+    mode: "production",
     entry: ["./src/index.js"],
     output: {
         library: "VueSocketIO",
@@ -17,7 +17,7 @@ module.exports = {
                     loader: "babel-loader",
                     options: {
                         plugins: [
-                            "@babel/plugin-proposal-class-properties",
+                            "@babel/plugin-transform-class-properties",
                             "@babel/plugin-transform-classes"
                         ]
                     }
