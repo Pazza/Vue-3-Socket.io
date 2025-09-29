@@ -68,6 +68,7 @@ export default class EventEmitter{
     emit(event, args){
 
         if(this.listeners.has(event)){
+            console.log('emit', event, args);
 
             Logger.info(`Broadcasting: #${event}, Data:`, args);
 
@@ -75,6 +76,9 @@ export default class EventEmitter{
                 listener.callback.call(listener.component, args);
             });
 
+        }
+        else {
+            console.log('emit[none]', event, args)
         }
 
         if(event !== 'ping' && event !== 'pong') {
