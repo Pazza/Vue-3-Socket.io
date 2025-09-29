@@ -21,8 +21,8 @@ export default class VueSocketIOListener {
             'pong'
     ];
 
-    constructor(io, emitter){
-        this.io = io;
+    constructor(socket, emitter){
+        this.io = socket.io;
         this.register();
         this.emitter = emitter;
     }
